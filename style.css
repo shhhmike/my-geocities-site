@@ -1,0 +1,144 @@
+body {
+    text-align: center;
+    background-image: url("media/space_turtle.jpg");
+    background-repeat: repeat;
+}
+
+nav a {
+    padding: 0 5px;
+}
+
+nav a + a::before {
+    content: " | ";
+}
+
+a,
+a:visited {
+    color: rgb(34, 220, 13);
+}
+
+a:hover {
+    color: hotpink;
+}
+
+.heading_text {
+    color: rgb(0, 209, 126);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main h2{
+    color:antiquewhite;
+}
+
+.emphasis_text:hover {
+    color: chartreuse;
+    background-color: hotpink;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#pokemon_div {
+    background-image: url("media/pokeball_background.jpg");
+    background-repeat: repeat;
+    padding: 30px;
+    font-weight: bold;
+}
+
+#pokemon_div h2 {
+    color:rgb(23, 125, 249);
+}
+
+#pokemon_div img {
+    width: 100px;
+    height: auto;
+}
+
+#work_div {
+    background-image: url("media/apple_background.jpg");
+    background-repeat: repeat;
+    padding: 30px;
+    font-weight: bold;
+}
+
+#work_div img {
+    width: 30px;
+    height: auto;
+}
+
+#work_div h2,
+#work_div p,
+#work_div li {
+    color: rgb(56, 16, 255);
+}
+
+.intro_text {
+    color: rgb(0, 255, 30);
+    background-color: black;
+}
+
+#fav_games_page p {
+    color: whitesmoke;
+}
+
+#bo2_text:hover {
+    color: rgb(227, 106, 7);
+}
+
+#spiderman_text {
+    color: rgb(33, 55, 254);
+}
+
+#spiderman_text:hover {
+    color: rgb(243, 13, 13);
+}
+
+#fav_games_page img {
+    max-width: 300px;
+    height: auto;
+}
+
+#fav_anime_page img {
+    max-width: 300px;
+    height: auto;
+}
+
+#fav_anime_page p {
+    color: whitesmoke;
+}
+
+#goat_hero_page img {
+    max-width: 300px;
+    height: auto;
+}
+
+#spiderman_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#spiderman_sprite {
+    width: 200px;
+    height: auto;
+}
+
+#goat_hero_page p {
+    color: whitesmoke;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+    }
+
+    nav a + a::before {
+        content: "";
+    }
+    main img {
+        max-width: 100%;
+        height: auto;
+    }
+    #spiderman_header {
+        flex-direction: column;
+    }   
+}
